@@ -4,7 +4,7 @@
   "description": "Utility belt for form actions",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "author": "Vinay",
   "license": "MIT",
@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/vinayakvinay/form-utility/issues"
   },
-  "homepage": "https://github.com/vinayakvinay/form-utility#readme"
+  "homepage": "https://github.com/vinayakvinay/form-utility#readme",
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "mocha": "^3.4.2"
+  }
 }
