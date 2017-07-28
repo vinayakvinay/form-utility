@@ -1,6 +1,6 @@
 {
   "name": "form-utility",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Utility belt for form actions",
   "main": "index.js",
   "scripts": {
