@@ -16,9 +16,6 @@ $ npm install --global form-utility
 
 ## Usage
 ### Import the module
-```js
-import { helperFunctionName } from 'form-utility';
-```
 
 ```js
 import { isValidEmail } from 'form-utility';
@@ -31,11 +28,11 @@ if(isValidEmail(userEmail)){
 
 ### Helper methods
 
-- `capitalizeName(string)` | return <string>
-- `isValidEmail(string)` | return <boolean>
-- `isValidName(string)` | return <boolean>
-- `isValidPhoneNumber(string)` | return <boolean>
-- `hasSpecialChar(string)` | return <boolean>
+- `capitalizeName(string)` | return `string`
+- `isValidEmail(string)` | return `string`
+- `isValidName(string)` | return `string`
+- `isValidPhoneNumber(string)` | return `string`
+- `hasSpecialChar(string)` | return `string`
 
 More to come..
 
