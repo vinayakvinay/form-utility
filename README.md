@@ -1,18 +1,13 @@
 # Form Utility
 
-Form Utility is a lightweight plugin for validating form inputs and truthiness.
+Form Utility is a lightweight plugin for validating form inputs.
 
 ## Install
 
-Local build integration:
 ```sh
 $ npm install --save-dev form-utility
 ```
 
-Global command-line interface:
-```sh
-$ npm install --global form-utility
-```
 
 ## Usage
 ### Import the module
@@ -29,10 +24,12 @@ if(isValidEmail(userEmail)){
 ### Helper methods
 
 - `capitalizeName(string)` | return `string`
-- `isValidEmail(string)` | return `string`
-- `isValidName(string)` | return `string`
-- `isValidPhoneNumber(string)` | return `string`
-- `hasSpecialChar(string)` | return `string`
+- `isValidEmail(string)` | return `boolean`
+- `isValidName(string)` | return `boolean`
+- `isValidPhoneNumber(string)` | return `boolean`
+- `hasSpecialChar(string)` | return `boolean`
+- `isEmptyString(string)` | return `boolean`
+- `isValidIPAddress(string)` | return `boolean`
 
 More to come..
 
