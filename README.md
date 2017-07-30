@@ -30,6 +30,7 @@ if(isValidEmail(userEmail)){
 - `hasSpecialChar(string)` | return `boolean`
 - `isEmptyString(string)` | return `boolean`
 - `isValidIPAddress(string)` | return `boolean`
+- `generateCaptcha(<captcha-length: number>)` | return `string`
 
 More to come..
 
