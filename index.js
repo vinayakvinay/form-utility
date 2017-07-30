@@ -6,6 +6,7 @@ exports.isValidNumber = isValidNumber;
 exports.hasSpecialChar = hasSpecialChar;
 exports.isEmptyString = isEmptyString;
 exports.isValidIPAddress = isValidIPAddress;
+exports.generateCaptcha = generateCaptcha;
 
 
 function capitalizeName(name) {
@@ -45,4 +46,14 @@ function isEmptyString(val){
 
 function isValidIPAddress(ipaddress){  
     return /^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/.test(ipaddress);
-} 
+}
+
+function generateCaptcha(captchaLength){
+    var captcha = '',
+        alphabets = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split(''),
+        captchaLength = captchaLength || 5;
+    for(var i = 0; i < captchaLength; i++){
+        captcha = captcha + alphabets[Math.ceil(Math.random() * 25)];
+    }
+    return captcha;
+}
