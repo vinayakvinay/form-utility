@@ -4,6 +4,7 @@ exports.isValidName = isValidName;
 exports.isValidPhoneNumber = isValidPhoneNumber;
 exports.isValidNumber = isValidNumber;
 exports.hasSpecialChar = hasSpecialChar;
+exports.isEmptyString = isEmptyString;
 
 
 function capitalizeName(name) {
@@ -35,4 +36,8 @@ function isValidNumber(number){
 
 function hasSpecialChar(char){
     return /[^a-z\d\s]+/gi.test(char);
+}
+
+function isEmptyString(val){
+    return val === '';
 }
